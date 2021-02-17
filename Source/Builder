@@ -1,0 +1,77 @@
+#!/bin/bash
+# OpenCanopy Generator
+# Copyright (c) 2021, chris1111. All Right Reserved
+# Simple bash script for icnspack by chris1111
+# Credit: Acidanthera, blackosx, pkdesign, pngquant.
+# Vars
+apptitle="OpenCanopy Generator"
+version="1.0"
+PARENTDIR=$(dirname "$0")
+cd "$PARENTDIR"
+IN_DIR="/Private/tmp/Icon"
+OUT_DIR="/Private/tmp/Resource"
+
+[[ ! -d "$IN_DIR" ]] && mkdir -p "$IN_DIR"
+[[ ! -d "$OUT_DIR" ]] && mkdir -p "$OUT_DIR"
+
+osascript <<EOD
+  tell application "OpenCanopy Generator"
+      activate
+  end tell
+EOD
+
+for pngFile in "$IN_DIR"/*.png
+do
+
+  filename=$(basename -- "$pngFile")
+  filenameNoExt="${filename%*.png}"
+
+  cp "$pngFile" "$OUT_DIR"
+
+  width=$(sips -g pixelWidth "$pngFile")
+  height=$(sips -g pixelHeight "$pngFile")
+
+  width="${width##*: }"
+  height="${height##*: }"
+
+  halfWidth=$(( width/2 ))
+  halfHeight=$(( height/2 ))
+
+  sips --deleteProperty profile -Z $halfWidth $halfHeight "$pngFile" --out "$OUT_DIR"/"$filenameNoExt"_sml.png &>/dev/null
+
+  ./pngquant --quality=90 --ext=.png --force "$OUT_DIR"/*.png
+
+  ./icnspack "$OUT_DIR"/"$filenameNoExt".icns "$OUT_DIR"/"$filenameNoExt"_sml.png "$OUT_DIR"/"$filenameNoExt".png && echo "Generated $filenameNoExt.icns" && rm "$OUT_DIR"/*.png
+
+done
+Sleep 1
+cd /Private/tmp 
+zip -r Resource.zip Resource
+Sleep 1
+osascript <<EOD
+  display dialog "
+Please select a destination to save the file Resource.zip
+
+NOTE: If you have already a Resource.zip in this location, you must move it or rename to save another one otherwise it will be replaced." with icon POSIX file "/Private/tmp/Appicon.icns" buttons {"Save"} default button {"Save"}			{"Save"}
+EOD
+
+  # Get image file location
+  imagepath=`/usr/bin/osascript << EOT
+    tell application "Finder"
+        activate	set sourceFolder to (POSIX file "/Private/tmp/Resource.zip") as alias	set imagepath to choose folder with prompt "Choose the destination location" default location (path to desktop)	duplicate sourceFolder to folder imagepath with replacingend telldelay 2set myFile to "/Private/tmp/Resource.zip"
+set myFolder to "/Private/tmp/Resource"
+set myIconFolder to "/Private/tmp/Icon"
+set myIcon to "/Private/tmp/AppIcon.icns"try        do shell script "rm -rf " & quoted form of myFile
+        do shell script "rm -rf " & quoted form of myFolder
+        do shell script "rm -rf " & quoted form of myIconFolder
+        do shell script "rm -rf " & quoted form of myIconend try
+     return
+  EOT`
+
+Sleep 1
+echo "
+******************************************************
+Files is generates!
+******************************************************"
+osascript -e 'do shell script "afplay './Funk.aiff' &> /dev/null &"'
+osascript -e 'display notification "OpenCanopy Generator" with title "'"$apptitle"'" subtitle "All is Done"'

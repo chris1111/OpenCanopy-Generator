@@ -1,0 +1,109 @@
+#!/bin/bash
+# OpenCanopy Generator
+# Copyright (c) 2021, chris1111. All Right Reserved
+# Simple bash script for icnspack by chris1111
+# Credit: Acidanthera, blackosx, pkdesign, pngquant.
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+rm -rf /tmp/Resource
+rm -rf /tmp/Iconrm -rf /tmp/Resource.zip
+# Vars
+apptitle="OpenCanopy Generator"
+version="1.0"
+cp -rp ./AppIcon.icns /Private/tmp/AppIcon.icns
+# Set Icon directory and file 
+iconfile="/Private/tmp/AppIcon.icns"
+TempDir="/Private/tmp/Icon"
+SourceDir="/Private/tmp/Resource"
+osascript -e "set Volume 3"
+echo "
+******************************************************  "
+echo "
+Welcome OpenCanopy Generator
+Make sure you follow the instructions correctly
+⬇︎ 
+                                                 
+This is a GUI tool for creating OpenCanopy icons for use with OpenCore.
+Create a set of PNG icons at the correct size and resolution 
+(see below) They can be named anything during creation but must be renamed to 
+follow OpenCore/OpenCanopy requirements.
+-----------------------------
+Cursor.png, Selector.png, Selected.png, Apple.png, ExtHardDrive.png 
+AppleRecv.png, ExtAppleRecv.png, HardDrive.png, AppleTM.png, Windows.png 
+Tool.png. Shell.png, Left.png, Right.png, Background.png 
+-----------------------------
+TAKE NOTE:
+New: Background.png for OC 0.6.6 and Higher must be 
+3840x2160 in 144 pixels for 1080p
+New: Left.png and Right.png for OC 0.6.6 and Higher 
+must be 80x80 in 144 pixels
+New: Selector.png for OC 0.6.6 and Higher must be 
+288x80 in 144 pixels
+
+Cursor.png must be 56x80 in 144 pixels
+Selector.png must be 80x80 in 144 pixels
+Selected.png must be 288x288 in 144 pixels
+All the others must be 256x256 in 144 pixels
+****************************************************** 
+
+Drag your PNG images to process them "
+
+# Set Droping directory and file
+for files in "$@" ;do
+# Select Proceed
+response=$(osascript -e 'tell app "System Events" to display dialog "OpenCanopy Generator
+
+Proceed to continue
+Cancel for Exit" buttons {"Cancel","Proceed"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+
+action=$(echo $response | cut -d ':' -f2)
+
+# Exit if Canceled
+if [ "$action" == "Cancel" ] ; then
+  osascript -e 'do shell script "afplay './Sound/Funk.aiff' &> /dev/null &"'
+  osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
+  echo "Program closing in 2 seconds User cancelled"
+  Sleep 2
+  echo "QUITAPP"
+  exit 0
+fi
+osascript <<EOD
+  tell application "OpenCanopy Generator"
+      activate
+  end tell
+EOD
+
+echo "Image processing :"
+osascript -e 'do shell script "afplay './Sound/Hero.aiff' &> /dev/null &"'
+Sleep 1
+mkdir -p "${TempDir}"
+mkdir -p "${SourceDir}"
+Sleep 1
+cp -R "$@" "${TempDir}"
+sleep 1
+./Builder "${TempDir}"
+osascript <<EOD
+  tell application "OpenCanopy Generator"
+      activate
+  end tell
+EOD
+# Exit App
+EXIT=Resource.zip
+echo Save ➣ $EXIT
+osascript -e 'do shell script "afplay './Sound/Funk.aiff' &> /dev/null &"'
+echo "All is Done. Enjoy! "
+
+#Exit tool
+if [ ! -d $EXIT ]; then
+    echo " "
+ exit 1
+fi
+done
