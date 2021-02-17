@@ -52,19 +52,29 @@ osascript <<EOD
   display dialog "
 Please select a destination to save the file Resource.zip
 
-NOTE: If you have already a Resource.zip in this location, you must move it or rename to save another one otherwise it will be replaced." with icon POSIX file "/Private/tmp/Appicon.icns" buttons {"Save"} default button {"Save"}			{"Save"}
+NOTE: If you have already a Resource.zip in this location, you must move it or rename to save another one otherwise it will be replaced." with icon POSIX file "/Private/tmp/Appicon.icns" buttons {"Save"} default button {"Save"}
+			{"Save"}
 EOD
 
   # Get image file location
   imagepath=`/usr/bin/osascript << EOT
     tell application "Finder"
-        activate	set sourceFolder to (POSIX file "/Private/tmp/Resource.zip") as alias	set imagepath to choose folder with prompt "Choose the destination location" default location (path to desktop)	duplicate sourceFolder to folder imagepath with replacingend telldelay 2set myFile to "/Private/tmp/Resource.zip"
+        activate
+	set sourceFolder to (POSIX file "/Private/tmp/Resource.zip") as alias
+	set imagepath to choose folder with prompt "Choose the destination location" default location (path to desktop)
+	duplicate sourceFolder to folder imagepath with replacing
+end tell
+delay 2
+set myFile to "/Private/tmp/Resource.zip"
 set myFolder to "/Private/tmp/Resource"
 set myIconFolder to "/Private/tmp/Icon"
-set myIcon to "/Private/tmp/AppIcon.icns"try        do shell script "rm -rf " & quoted form of myFile
+set myIcon to "/Private/tmp/AppIcon.icns"
+try
+        do shell script "rm -rf " & quoted form of myFile
         do shell script "rm -rf " & quoted form of myFolder
         do shell script "rm -rf " & quoted form of myIconFolder
-        do shell script "rm -rf " & quoted form of myIconend try
+        do shell script "rm -rf " & quoted form of myIcon
+end try
      return
   EOT`
 
