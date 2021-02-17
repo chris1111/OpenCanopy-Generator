@@ -59,7 +59,7 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 - Update 17 Feb 2021 Release
 
 View full Video ⬇︎
-### latest Video release V-10
+### Video release V-1
 [![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://youtu.be/3zK7SGYhZ8Q)
 
 
