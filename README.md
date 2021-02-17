@@ -1,1 +1,1 @@
-# OpenCanopy-Generator
+# OpenCanopy Generator
