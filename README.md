@@ -3,7 +3,7 @@
 ![AppIcon](https://user-images.githubusercontent.com/6248794/108217341-795d5d80-7101-11eb-9c78-47827592b801.png)
 
 - Build by [chris1111](https://github.com/chris1111/)
-- Created from [Script Platypus](https://github.com/sveinbjornt/Platypus)
+- Created from [Platypus](https://github.com/sveinbjornt/Platypus)
 - Credit: [pngquant](https://pngquant.org)
 - Credit: [OpenCore Team](https://github.com/acidanthera/OpenCorePkg)
 - Credit: [pkdesign](https://www.insanelymac.com/forum/profile/488070-pkdesign/)
