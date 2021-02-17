@@ -3,7 +3,7 @@
 ![AppIcon](https://user-images.githubusercontent.com/6248794/108217341-795d5d80-7101-11eb-9c78-47827592b801.png)
 
 - Build by [chris1111](https://github.com/chris1111/)
-- Credit: [pngquant](https://pngquant.org), [Acidanthera](https://github.com/acidanthera/OpenCorePkg),[blackosx](https://www.insanelymac.com/forum/profile/331032-blackosx/),[pkdesign](https://www.insanelymac.com/forum/profile/488070-pkdesign/)
+- Credit: [pngquant](https://pngquant.org), [Acidanthera](https://github.com/acidanthera/OpenCorePkg), [blackosx](https://www.insanelymac.com/forum/profile/331032-blackosx/), [pkdesign](https://www.insanelymac.com/forum/profile/488070-pkdesign/)
 - Created from [Platypus](https://github.com/sveinbjornt/Platypus)
 
 This tool is for create OpenCore Themes. create a set of Icon at the good size.
