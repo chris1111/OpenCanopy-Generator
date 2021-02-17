@@ -63,7 +63,7 @@ View full Video ⬇︎
 [![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://youtu.be/3zK7SGYhZ8Q)
 
 
-### Download V-1 ➤ [OpenCanopy Generator]()
+### Download V-1 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V1)
 
 
 ### Setup config.plist
