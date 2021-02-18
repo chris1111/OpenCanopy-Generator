@@ -64,7 +64,7 @@ EOD
 	set imagepath to choose folder with prompt "Choose the destination location" default location (path to desktop)
 	duplicate sourceFolder to folder imagepath with replacing
 end tell
-delay 2
+delay 1
 set myFile to "/Private/tmp/Resource.zip"
 set myFolder to "/Private/tmp/Resource"
 set myIconFolder to "/Private/tmp/Icon"
@@ -78,7 +78,6 @@ end try
      return
   EOT`
 
-Sleep 1
 echo "
 ******************************************************
 Files is generates!
