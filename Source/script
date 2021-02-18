@@ -14,9 +14,6 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-rm -rf /tmp/Resource
-rm -rf /tmp/Icon
-rm -rf /tmp/Resource.zip
 # Vars
 apptitle="OpenCanopy Generator"
 version="1.0"
@@ -26,6 +23,19 @@ iconfile="/Private/tmp/AppIcon.icns"
 TempDir="/Private/tmp/Icon"
 SourceDir="/Private/tmp/Resource"
 osascript -e "set Volume 3"
+# Remove file if exist
+if [ "/Private/tmp/Resource" ]; then
+	rm -rf "/Private/tmp/Resource"
+fi
+
+if [ "/Private/tmp/Icon" ]; then
+	rm -rf "/Private/tmp/Icon"
+fi
+
+if [ "/Private/tmp/Resource.zip" ]; then
+	rm -rf "/Private/tmp/Resource.zip"
+fi
+
 echo "
 ******************************************************  "
 echo "
