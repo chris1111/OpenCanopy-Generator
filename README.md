@@ -22,6 +22,7 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 - Shell.png
 - Left.png
 - Right.png
+- Cursor.png
 - Background.png 
 -----------------------------
 #### TAKE NOTE:
