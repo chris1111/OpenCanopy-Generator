@@ -23,15 +23,25 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 - Left.png
 - Right.png
 - Cursor.png
+- Restart.png
+- ShutDown.png
 - Background.png 
+- BtnFocus.png
+- Dot.png
+- Enter.png
+- SetDefault.png
+- Lock.png
 -----------------------------
-#### TAKE NOTE:
-* New: Background.png for OC 0.6.6 and Higher must be 3840x2160 in 144 pixels this is for 1080p
-* New: Left.png and Right.png for OC 0.6.6 and Higher must be 80x80 in 144 pixels
-* New: Selector.png for OC 0.6.6 and Higher must be 288x80 in 144 pixels
-
-* Selector.png must be 80x80 in 144 pixels
-* Selected.png must be 288x288 in 144 pixels
+#### TAKE NOTE: for OC 0.6.6 and Higher
+* New Background.png must be 3840x2160 in 144 pixels this is for 1080p
+* New Left.png and Right.png must be 80x80 in 144 pixels
+* New Selector.png must be 80x80 in 144 pixels
+* New Selected.png must be 288x288 in 144 pixels
+* New BtnFocus.png must be 100x100 in 144 pixels
+* New Dot.png must be 14x14 in 144 pixels
+* New Enter.png must be 115x50 in 144 pixels
+* New SetDefault.png must be 80x80 in 144 pixels
+* New Lock.png must be 160x222 in 144 pixels
 * All the others must be 256x256 in 144 pixels
 
 #### New: All Background.png size for OC 0.6.6 and Higher 
