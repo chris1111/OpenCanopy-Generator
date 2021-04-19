@@ -50,15 +50,20 @@ follow OpenCore/OpenCanopy requirements.
 -----------------------------
 Cursor.png, Selector.png, Selected.png, Apple.png, ExtHardDrive.png 
 AppleRecv.png, ExtAppleRecv.png, HardDrive.png, AppleTM.png, Windows.png 
-Tool.png. Shell.png, Left.png, Right.png, Background.png 
+Tool.png. Shell.png, Left.png, Right.png, Background.png, Restart.png
+ShutDown.png
 -----------------------------
 TAKE NOTE:
-New: Background.png for OC 0.6.6 and Higher must be 
+Background.png for OC 0.6.6 and Higher must be 
 3840x2160 in 144 pixels for 1080p
-New: Left.png and Right.png for OC 0.6.6 and Higher 
-must be 80x80 in 144 pixels
-New: Selector.png for OC 0.6.6 and Higher must be 
-288x80 in 144 pixels
+Left.png and Right.png must be 80x80 in 144 pixels
+Selector.png must be 288x80 in 144 pixels
+BtnFocus.png  must be 100x100 in 144 pixels
+Dot.png must be 14x14 in 144 pixels
+Enter.png must be 115x50 in 144 pixels
+SetDefault.png must be 80x80 in 144 pixels
+Lock.png must be 160x222 in 144 pixels
+
 
 Cursor.png must be 56x80 in 144 pixels
 Selector.png must be 80x80 in 144 pixels
