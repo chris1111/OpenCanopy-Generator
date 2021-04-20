@@ -15,6 +15,7 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 - ExtHardDrive.png
 - AppleRecv.png
 - ExtAppleRecv.png
+- ExtAppleTM.png
 - HardDrive.png
 - AppleTM.png
 - Windows.png
