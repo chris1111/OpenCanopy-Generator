@@ -48,7 +48,7 @@ Create a set of PNG icons at the correct size and resolution
 (see below) They can be named anything during creation but must be renamed to 
 follow OpenCore/OpenCanopy requirements.
 -----------------------------
-- Selector.png, Selected.png, Apple.png, ExtHardDrive.png, AppleRecv.png, ExtAppleRecv.png, HardDrive.png, AppleTM.png, Windows.png, Tool.png, Shell.png, Left.png, Right.pngCursor.png, Restart.png, ShutDown.png, Background.png, BtnFocus.png, Dot.png, Enter.png, SetDefault.png, Lock.png
+- Selector.png, Selected.png, Apple.png, ExtHardDrive.png, AppleRecv.png, ExtAppleTM.png, ExtAppleRecv.png, HardDrive.png, AppleTM.png, Windows.png, Tool.png, Shell.png, Left.png, Right.pngCursor.png, Restart.png, ShutDown.png, Background.png, BtnFocus.png, Dot.png, Enter.png, SetDefault.png, Lock.png
 -----------------------------
 #### TAKE NOTE: for OC 0.6.6 and Higher
 * New Background.png must be 3840x2160 in 144 pixels this is for 1080p
