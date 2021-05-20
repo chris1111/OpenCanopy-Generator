@@ -86,11 +86,7 @@ if [ "$action" == "Cancel" ] ; then
   echo "QUITAPP"
   exit 0
 fi
-osascript <<EOD
-  tell application "OpenCanopy Generator"
-      activate
-  end tell
-EOD
+
 
 echo "Image processing :"
 osascript -e 'do shell script "afplay './Sound/Hero.aiff' &> /dev/null &"'
@@ -101,11 +97,7 @@ Sleep 1
 cp -R "$@" "${TempDir}"
 sleep 1
 ./Builder "${TempDir}"
-osascript <<EOD
-  tell application "OpenCanopy Generator"
-      activate
-  end tell
-EOD
+
 # Exit App
 EXIT=Resource.zip
 echo Save ➣ $EXIT
