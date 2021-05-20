@@ -14,12 +14,6 @@ OUT_DIR="/Private/tmp/Resource"
 [[ ! -d "$IN_DIR" ]] && mkdir -p "$IN_DIR"
 [[ ! -d "$OUT_DIR" ]] && mkdir -p "$OUT_DIR"
 
-osascript <<EOD
-  tell application "OpenCanopy Generator"
-      activate
-  end tell
-EOD
-
 for pngFile in "$IN_DIR"/*.png
 do
 
