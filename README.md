@@ -65,14 +65,14 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 
 
 ### Release Update
-- Update 17 Feb 2021 Release
+- Release V2 20 May 2021 remove activate
 
 View full Video ⬇︎
 ### Video release V-1
 [![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://youtu.be/3zK7SGYhZ8Q)
 
 
-### Download V-1 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V1)
+### Download V-2 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V2)
 
 
 ### Setup config.plist
