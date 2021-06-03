@@ -45,22 +45,35 @@ Make sure you follow the instructions correctly
                                                  
 This is a GUI tool for creating OpenCanopy icons for use with OpenCore.
 Create a set of PNG icons at the correct size and resolution 
-(see below) They can be named anything during creation but must be renamed to 
-follow OpenCore/OpenCanopy requirements.
+(see below) They can be named anything during creation but must be renamed to follow OpenCore/OpenCanopy requirements.
 -----------------------------
+
 - Selector.png, Selected.png, Apple.png, ExtHardDrive.png, AppleRecv.png, ExtAppleTM.png, ExtAppleRecv.png, HardDrive.png, AppleTM.png, Windows.png, Tool.png, Shell.png, Left.png, Right.pngCursor.png, Restart.png, ShutDown.png, Background.png, BtnFocus.png, Dot.png, Enter.png, SetDefault.png, Lock.png
+
 -----------------------------
+
 #### TAKE NOTE: for OC 0.6.6 and Higher
+
 * New Background.png must be 3840x2160 in 144 pixels this is for 1080p
+
 * New Left.png and Right.png must be 80x80 in 144 pixels
+
 * New Selector.png must be 80x80 in 144 pixels
+
 * New Selected.png must be 288x288 in 144 pixels
+
 * New BtnFocus.png must be 100x100 in 144 pixels
+
 * New Dot.png must be 14x14 in 144 pixels
+
 * New Enter.png must be 115x50 in 144 pixels
+
 * New SetDefault.png must be 80x80 in 144 pixels
+
 * New Lock.png must be 160x222 in 144 pixels
+
 * All the others must be 256x256 in 144 pixels
+
 
 
 ****************************************************** 
