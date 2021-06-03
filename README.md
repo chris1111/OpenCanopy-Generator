@@ -65,7 +65,7 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 
 
 ### Release Update
-- Release V3 uppdate 02 June 2021 Correction description
+- Release V3 uppdate 03 June 2021 Correction description
 
 View full Video ⬇︎
 ### Video release V-1
