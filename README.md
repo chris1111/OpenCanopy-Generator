@@ -88,4 +88,4 @@ View full Video ⬇︎
 - Misc -> Boot -> PickerVariant: chris1111\OnLight
 
 
-### A tool to resize Background images for use with OpenCanopyGenerator ➤ [Background-Resizer](https://github.com/chris1111/Background-Resizer)
+#### A tool to resize Background images for use with OpenCanopyGenerator ➤ [Background-Resizer](https://github.com/chris1111/Background-Resizer)
