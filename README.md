@@ -76,11 +76,24 @@ View full Video ⬇︎
 
 ### Setup config.plist
 
-- Misc -> Boot -> PickerMode: External
-- Misc -> Boot -> PickerVariant: Default, Modern or Auto
+#### Setup PickerVariant config.plist (OnLight themes as exemple)  ☞ [See config.plist](https://user-images.githubusercontent.com/6248794/118682984-f5ce0e00-b7ce-11eb-8e3c-52055b213607.png) 
+
+- Misc -> Boot -> PickerVariant: chris1111\OnLight
+- Misc -> Boot -> PickerAtributes: 17
+
+
+#### Setup Flavours theme in config.plist (Flavours-Collor themes as exemple
+
+- Misc -> Boot -> PickerVariant: chris1111\Flavours-Collor
+- Misc -> Boot -> PickerAtributes: 145
+
+
+- Misc -> Boot -> PickerMode: Builtin
+- Misc -> Boot -> PickerVariant: Default, Auto
 - Auto — Automatically select one set of icons based on DefaultBackground colour.
 - Default — Default icon set.
-- Modern — Modern icon set.
+
+
 - UEFI -> Drivers add OpenCanopy.efi
 
 ### Setup PickerVariant config.plist (OnLight themes as exemple)  ☞ [See config.plist](https://user-images.githubusercontent.com/6248794/118682984-f5ce0e00-b7ce-11eb-8e3c-52055b213607.png) 
