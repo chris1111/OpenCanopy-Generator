@@ -87,6 +87,7 @@ View full Video ⬇︎
 - Misc -> Boot -> PickerVariant: chris1111\Flavours-Collor
 - Misc -> Boot -> PickerAtributes: 145
 
+### Other Setup config.plist
 
 - Misc -> Boot -> PickerMode: Builtin
 - Misc -> Boot -> PickerVariant: Default, Auto
@@ -94,11 +95,7 @@ View full Video ⬇︎
 - Default — Default icon set.
 
 
-- UEFI -> Drivers add OpenCanopy.efi
-
-### Setup PickerVariant config.plist (OnLight themes as exemple)  ☞ [See config.plist](https://user-images.githubusercontent.com/6248794/118682984-f5ce0e00-b7ce-11eb-8e3c-52055b213607.png) 
-
-- Misc -> Boot -> PickerVariant: chris1111\OnLight
+### Mandatory - UEFI -> Drivers add OpenCanopy.efi
 
 
 #### A tool to resize Background images for use with OpenCanopyGenerator ➤ [Background-Resizer](https://github.com/chris1111/Background-Resizer)
