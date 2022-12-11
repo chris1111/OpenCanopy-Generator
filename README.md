@@ -32,6 +32,10 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 - Enter.png
 - SetDefault.png
 - Lock.png
+
+### Create Flavours Theme ➥ [Flavours Icons](https://github.com/chris1111/OpenCanopy-Generator/blob/OpenCanopy-Generator.dmg/Flavours.md)
+
+
 -----------------------------
 #### TAKE NOTE: for OC 0.6.6 and Higher
 * New Background.png must be 3840x2160 in 144 pixels this is for 1080p
