@@ -48,7 +48,7 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 * Lock.png must be 160x222 in 144 pixels
 * All the others must be 256x256 in 144 pixels
 
-#### New: All Background.png size for OC 0.6.6 and Higher 
+#### All Background.png size for OC 0.6.6 and Higher 
 - Create image Background 5120x2880 in 144 pixels ➤ this is for 2560x1440 screen
 - Create image Background 3840x2400 in 144 pixels ➤ this is for 1920x1200 screen
 - Create image Background 3360x2100 in 144 pixels ➤ this is for 1680x1050 screen
