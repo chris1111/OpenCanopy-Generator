@@ -65,40 +65,19 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 
 #### Looking for ➣ [Themes exemple](https://github.com/chris1111/My-Simple-OC-Themes)
 
-
-
 ### Release Update
-- Release V3 uppdate 03 June 2021 Correction description
+- Release V4 uppdate 11 Dec 2022 update description
 
 View full Video ⬇︎
 ### Video release V-1
 [![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://youtu.be/3zK7SGYhZ8Q)
 
+### Download V-4 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V4)
 
-### Download V-3 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V3)
+### Setup config.plist ⇩
 
-### Setup config.plist
-
-#### Setup PickerVariant config.plist (OnLight themes as exemple)  ☞ [See config.plist](https://user-images.githubusercontent.com/6248794/118682984-f5ce0e00-b7ce-11eb-8e3c-52055b213607.png) 
-
-- Misc -> Boot -> PickerVariant: chris1111\OnLight
-- Misc -> Boot -> PickerAtributes: 17
-
-
-#### Setup Flavours theme in config.plist (Flavours-Collor themes as exemple
-
-- Misc -> Boot -> PickerVariant: chris1111\Flavours-Collor
-- Misc -> Boot -> PickerAtributes: 145
-
-### Other Setup config.plist
-
-- Misc -> Boot -> PickerMode: Builtin
-- Misc -> Boot -> PickerVariant: Default, Auto
-- Auto — Automatically select one set of icons based on DefaultBackground colour.
-- Default — Default icon set.
-
+#### Setup PickerVariant config.plist  ☞ [Setup PickerVariant](https://github.com/chris1111/OpenCanopy-Generator/blob/OpenCanopy-Generator.dmg/SetupPickerVariant.md) 
 
 ### Mandatory - UEFI -> Drivers add OpenCanopy.efi
-
 
 #### A tool to resize Background images for use with OpenCanopyGenerator ➤ [Background-Resizer](https://github.com/chris1111/Background-Resizer)
