@@ -63,7 +63,7 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 - Create image Background 2048x1536 in 144 pixels ➤ this is for 1024x768 screen
 
 
-#### Looking for ➣ [Themes exemple](https://github.com/chris1111/My-Simple-OC-Themes)
+#### Looking for ➣ [Themes exemple](https://github.com/chris1111/My-Simple-OC-Themes/blob/master/Download.md)
 
 ### Release Update
 - Release V4 uppdate 11 Dec 2022 update description
