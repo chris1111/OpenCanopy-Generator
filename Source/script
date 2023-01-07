@@ -17,9 +17,9 @@
 # Vars
 apptitle="OpenCanopy Generator"
 version="1.0"
+cp -rp ./AppIcon.icns /Private/tmp/AppIcon.icns
 # Set Icon directory and file 
-export ICNS=$(dirname "${0}")
-iconfile="$ICNS/AppIcon.icns"
+iconfile="/Private/tmp/AppIcon.icns"
 TempDir="/Private/tmp/Icon"
 SourceDir="/Private/tmp/Resource"
 osascript -e "set Volume 3"
