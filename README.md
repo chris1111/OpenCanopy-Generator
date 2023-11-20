@@ -80,6 +80,6 @@ View full Video ⬇︎
 
 ### Mandatory - UEFI -> Drivers add OpenCanopy.efi
 
-### Atool to [Resize Image Icons](https://github.com/chris1111/Build-256-Icons)
+#### A tool to [Resize Image Icons](https://github.com/chris1111/Build-256-Icons)
 
 #### A tool to resize Background images for use with OpenCanopyGenerator ➤ [Background-Resizer](https://github.com/chris1111/Background-Resizer)
