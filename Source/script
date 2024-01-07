@@ -36,19 +36,17 @@ if [ "/Private/tmp/Resource.zip" ]; then
 	rm -rf "/Private/tmp/Resource.zip"
 fi
 
-echo "
-Welcome OpenCanopy Generator
+echo "Welcome OpenCanopy Generator
 Make sure you follow the instructions correctly ⬇︎                                                  
 This is a GUI tool for creating OpenCanopy icons for use with OpenCore.
 Create a set of PNG icons at the correct size and resolution 
 (see below) They can be named anything during creation but must be renamed to follow OpenCore/OpenCanopy requirements.
 -----------------------------
-- Selector.png, Selected.png, Apple.png, ExtHardDrive.png, AppleRecv.png, ExtAppleRecv.png, ExtAppleTM.png, HardDrive.png, AppleTM.png, Windows.png, Tool.png, Shell.png, Left.png, Right.png, Cursor.png, Restart.png, ShutDown.png, Background.png, BtnFocus.png, Dot.png, Enter.png, SetDefault.png, Lock.png
+- Selector.png, Selected.png, Apple.png, ExtHardDrive.png, AppleRecv.png, ExtAppleRecv.png, ExtAppleTM.png, HardDrive.png, AppleTM.png, Windows.png, Tool.png, Shell.png, ResetNVRAM.png, ToggleSip.png, Bootloader.png, Left.png, Right.png, Cursor.png, Restart.png, ShutDown.png, Background.png, BtnFocus.png, Dot.png, Enter.png, SetDefault.png, Lock.png
 
 ### Create Flavours Theme ➥ See (https://github.com/chris1111/OpenCanopy-Generator/blob/OpenCanopy-Generator.dmg/Flavours.md)
 -----------------------------
 #### TAKE NOTE: for OC 0.6.6 and Higher
-
 * Background.png must be 3840x2160 in 144 pixels this is for 1080p
 * Left.png and Right.png must be 80x80 in 144 pixels
 * Selector.png must be 80x80 in 144 pixels
