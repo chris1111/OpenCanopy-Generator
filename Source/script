@@ -1,6 +1,6 @@
 #!/bin/bash
 # OpenCanopy Generator
-# Copyright (c) 2021, chris1111. All Right Reserved
+# Copyright (c) 2021, 2024 chris1111. All Right Reserved
 # Simple bash script for icnspack by chris1111
 # Credit: Acidanthera, blackosx, pkdesign, pngquant.
 # Permission to use, copy, modify, and/or distribute this software for any
@@ -17,9 +17,9 @@
 # Vars
 apptitle="OpenCanopy Generator"
 version="1.0"
-cp -rp ./AppIcon.icns /Private/tmp/AppIcon.icns
 # Set Icon directory and file 
-iconfile="/Private/tmp/AppIcon.icns"
+export ICNS=$(dirname "${0}")
+iconfile="$ICNS/AppIcon.icns"
 TempDir="/Private/tmp/Icon"
 SourceDir="/Private/tmp/Resource"
 osascript -e "set Volume 3"
@@ -38,48 +38,39 @@ fi
 
 echo "
 Welcome OpenCanopy Generator
-Make sure you follow the instructions correctly
-⬇︎                                                  
+Make sure you follow the instructions correctly ⬇︎                                                  
 This is a GUI tool for creating OpenCanopy icons for use with OpenCore.
 Create a set of PNG icons at the correct size and resolution 
 (see below) They can be named anything during creation but must be renamed to follow OpenCore/OpenCanopy requirements.
 -----------------------------
-
 - Selector.png, Selected.png, Apple.png, ExtHardDrive.png, AppleRecv.png, ExtAppleRecv.png, ExtAppleTM.png, HardDrive.png, AppleTM.png, Windows.png, Tool.png, Shell.png, Left.png, Right.png, Cursor.png, Restart.png, ShutDown.png, Background.png, BtnFocus.png, Dot.png, Enter.png, SetDefault.png, Lock.png
 
 ### Create Flavours Theme ➥ See (https://github.com/chris1111/OpenCanopy-Generator/blob/OpenCanopy-Generator.dmg/Flavours.md)
-
 -----------------------------
-
 #### TAKE NOTE: for OC 0.6.6 and Higher
 
 * Background.png must be 3840x2160 in 144 pixels this is for 1080p
-
 * Left.png and Right.png must be 80x80 in 144 pixels
-
 * Selector.png must be 80x80 in 144 pixels
-
 * Selected.png must be 288x288 in 144 pixels
-
 * BtnFocus.png must be 100x100 in 144 pixels
-
 * Dot.png must be 14x14 in 144 pixels
-
 * Enter.png must be 115x50 in 144 pixels
-
 * SetDefault.png must be 80x80 in 144 pixels
-
 * Lock.png must be 160x222 in 144 pixels
-
 * All the others must be 256x256 in 144 pixels
-
-
 ****************************************************** 
-
 Drag your PNG images to process them "
-
 # Set Droping directory and file
 for files in "$@" ;do
+
+osascript <<EOD
+  tell application "OpenCanopy Generator"
+      activate
+  end tell
+EOD
+
+
 # Select Proceed
 response=$(osascript -e 'tell app "System Events" to display dialog "OpenCanopy Generator
 
@@ -87,6 +78,14 @@ Proceed to continue
 Cancel for Exit" buttons {"Cancel","Proceed"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
 action=$(echo $response | cut -d ':' -f2)
+
+osascript <<EOD
+  tell application "OpenCanopy Generator"
+      activate
+  end tell
+EOD
+
+
 
 # Exit if Canceled
 if [ "$action" == "Cancel" ] ; then
@@ -98,7 +97,6 @@ if [ "$action" == "Cancel" ] ; then
   exit 0
 fi
 
-
 echo "Image processing :"
 osascript -e 'do shell script "afplay './Sound/Hero.aiff' &> /dev/null &"'
 Sleep 1
@@ -108,6 +106,12 @@ Sleep 1
 cp -R "$@" "${TempDir}"
 sleep 1
 ./Builder "${TempDir}"
+
+osascript <<EOD
+  tell application "OpenCanopy Generator"
+      activate
+  end tell
+EOD
 
 # Exit App
 EXIT=Resource.zip

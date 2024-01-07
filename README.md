@@ -1,6 +1,6 @@
 # OpenCanopy Generator
 
-![AppIcon](https://user-images.githubusercontent.com/6248794/108217341-795d5d80-7101-11eb-9c78-47827592b801.png)
+<img width="250" alt="AppIcon" src="https://github.com/chris1111/OpenCanopy-Generator/assets/6248794/8f8be0c6-99f5-4abd-b6c5-d0c86a073add">
 
 - Build by [chris1111](https://github.com/chris1111/)
 - Credit: [pngquant](https://pngquant.org), [Acidanthera](https://github.com/acidanthera/OpenCorePkg), [blackosx](https://www.insanelymac.com/forum/profile/331032-blackosx/), [pkdesign](https://www.insanelymac.com/forum/profile/488070-pkdesign/)
@@ -66,13 +66,13 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 #### Looking for ➣ [Themes exemple](https://github.com/chris1111/My-Simple-OC-Themes/blob/master/Download.md)
 
 ### Release Update
-- Release V5 uppdate 07 May 2023 Update app
+- Release V6 uppdate 06 Jan 2024 Update app
 
 View full Video ⬇︎
 ### Video release V-1
 [![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://youtu.be/3zK7SGYhZ8Q)
 
-### Download V-5 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V5)
+### Download V-6 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V6)
 
 ### Setup config.plist ⇩
 

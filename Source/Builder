@@ -1,6 +1,6 @@
 #!/bin/bash
 # OpenCanopy Generator
-# Copyright (c) 2021, chris1111. All Right Reserved
+# Copyright (c) 2021, 2024 chris1111. All Right Reserved
 # Simple bash script for icnspack by chris1111
 # Credit: Acidanthera, blackosx, pkdesign, pngquant.
 # Vars
@@ -13,6 +13,7 @@ OUT_DIR="/Private/tmp/Resource"
 
 [[ ! -d "$IN_DIR" ]] && mkdir -p "$IN_DIR"
 [[ ! -d "$OUT_DIR" ]] && mkdir -p "$OUT_DIR"
+
 
 for pngFile in "$IN_DIR"/*.png
 do
@@ -46,29 +47,18 @@ osascript <<EOD
   display dialog "
 Please select a destination to save the file Resource.zip
 
-NOTE: If you have already a Resource.zip in this location, you must move it or rename to save another one otherwise it will be replaced." with icon POSIX file "/Private/tmp/Appicon.icns" buttons {"Save"} default button {"Save"}
-			{"Save"}
+NOTE: If you have already a Resource.zip in this location, you must move it or rename to save another one otherwise it will be replaced." with icon note buttons {"Save"} default button {"Save"}			{"Save"}
 EOD
 
   # Get image file location
   imagepath=`/usr/bin/osascript << EOT
     tell application "Finder"
-        activate
-	set sourceFolder to (POSIX file "/Private/tmp/Resource.zip") as alias
-	set imagepath to choose folder with prompt "Choose the destination location" default location (path to desktop)
-	duplicate sourceFolder to folder imagepath with replacing
-end tell
-delay 1
-set myFile to "/Private/tmp/Resource.zip"
+        activate	set sourceFolder to (POSIX file "/Private/tmp/Resource.zip") as alias	set imagepath to choose folder with prompt "Choose the destination location" default location (path to desktop)	duplicate sourceFolder to folder imagepath with replacingend tell
+delay 1set myFile to "/Private/tmp/Resource.zip"
 set myFolder to "/Private/tmp/Resource"
-set myIconFolder to "/Private/tmp/Icon"
-set myIcon to "/Private/tmp/AppIcon.icns"
-try
-        do shell script "rm -rf " & quoted form of myFile
+set myIconFolder to "/Private/tmp/Icon"try        do shell script "rm -rf " & quoted form of myFile
         do shell script "rm -rf " & quoted form of myFolder
-        do shell script "rm -rf " & quoted form of myIconFolder
-        do shell script "rm -rf " & quoted form of myIcon
-end try
+        do shell script "rm -rf " & quoted form of myIconFolderend try
      return
   EOT`
 
