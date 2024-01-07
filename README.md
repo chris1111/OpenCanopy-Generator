@@ -5,6 +5,9 @@
 - Build by [chris1111](https://github.com/chris1111/)
 - Credit: [pngquant](https://pngquant.org), [Acidanthera](https://github.com/acidanthera/OpenCorePkg), [blackosx](https://www.insanelymac.com/forum/profile/331032-blackosx/), [pkdesign](https://www.insanelymac.com/forum/profile/488070-pkdesign/)
 - Created from [Platypus](https://github.com/sveinbjornt/Platypus)
+### Release Update
+- Release V6 uppdate 06 Jan 2024 Update app
+### Download V-6 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V6)
 
 This tool is for create OpenCore Themes. create a set of Icon at the good size.
 ### ⬇(Exemple)⬇
@@ -68,14 +71,9 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 
 #### Looking for ➣ [Themes exemple](https://github.com/chris1111/My-Simple-OC-Themes/releases/tag/Archive_New-Themes)
 
-### Release Update
-- Release V6 uppdate 06 Jan 2024 Update app
-
 View full Video ⬇︎
 ### Video release V-1
 [![Modular Image Creation](https://i.ibb.co/K5bFrB5/VIDEO.png)](https://youtu.be/3zK7SGYhZ8Q)
-
-### Download V-6 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V6)
 
 ### Setup config.plist ⇩
 
