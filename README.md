@@ -1,6 +1,6 @@
 # OpenCanopy Generator
 
-<img width="250" alt="AppIcon" src="https://github.com/chris1111/OpenCanopy-Generator/assets/6248794/8f8be0c6-99f5-4abd-b6c5-d0c86a073add">
+<img src="Images_Icons/AppIcon.png" alt="Github Project" style="width:50%;">
 
 - Build by [chris1111](https://github.com/chris1111/)
 - Credit: [pngquant](https://pngquant.org), [Acidanthera](https://github.com/acidanthera/OpenCorePkg), [blackosx](https://www.insanelymac.com/forum/profile/331032-blackosx/), [pkdesign](https://www.insanelymac.com/forum/profile/488070-pkdesign/)
