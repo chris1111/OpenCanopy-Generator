@@ -21,6 +21,9 @@ This tool is for create OpenCore Themes. create a set of Icon at the good size.
 - Windows.png
 - Tool.png
 - Shell.png
+- ResetNVRAM.png
+- ToggleSip.png
+- Bootloader.png
 - Left.png
 - Right.png
 - Cursor.png
