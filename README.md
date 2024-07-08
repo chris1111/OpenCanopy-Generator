@@ -6,7 +6,7 @@
 - Credit: [pngquant](https://pngquant.org), [Acidanthera](https://github.com/acidanthera/OpenCorePkg), [blackosx](https://www.insanelymac.com/forum/profile/331032-blackosx/), [pkdesign](https://www.insanelymac.com/forum/profile/488070-pkdesign/)
 - Created from [Platypus](https://github.com/sveinbjornt/Platypus)
 ### Release Update
-- Release V6 uppdate 06 Jan 2024 Update app
+- Release V6 uppdate 07 Jul 2024 Update app icons
 ### Download V-6 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V6)
 
 This tool is for create OpenCore Themes. create a set of Icon at the good size.
