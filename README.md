@@ -6,7 +6,7 @@
 - Credit: [pngquant](https://pngquant.org), [Acidanthera](https://github.com/acidanthera/OpenCorePkg), [blackosx](https://www.insanelymac.com/forum/profile/331032-blackosx/), [pkdesign](https://www.insanelymac.com/forum/profile/488070-pkdesign/)
 - Created from [Platypus](https://github.com/sveinbjornt/Platypus)
 ### Release Update
-- Release -V7 31 Jan 2026 Update program icon in Tahoe style.
+- Release 31 Jan 2026 Update program icon in Tahoe style.
 ### Download V-7 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V7)
 
 This tool is for create OpenCore Themes. create a set of Icon at the good size.
