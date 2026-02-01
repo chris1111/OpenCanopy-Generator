@@ -37,7 +37,7 @@
             }
           },
           "hidden" : false,
-          "image-name" : "Cool Text - O C 501340296142910.png",
+          "image-name" : "OC.png",
           "name" : "OC",
           "position-specializations" : [
             {
@@ -55,7 +55,7 @@
         {
           "glass" : true,
           "hidden" : false,
-          "image-name" : "vector 2 4.png",
+          "image-name" : "vector.png",
           "name" : "vector",
           "position-specializations" : [
             {
