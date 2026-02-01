@@ -7,7 +7,7 @@
 - Created from [Platypus](https://github.com/sveinbjornt/Platypus)
 ### Release Update
 - Release -V6 30 Sept 2025 Update Shutdown icons, Update icnspack
-### Download V-6 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V6)
+### Download V-7 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V7)
 
 This tool is for create OpenCore Themes. create a set of Icon at the good size.
 ### ⬇(Exemple)⬇
