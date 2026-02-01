@@ -22,7 +22,6 @@ export ICNS=$(dirname "${0}")
 iconfile="$ICNS/AppIcon.icns"
 TempDir="/Private/tmp/Icon"
 SourceDir="/Private/tmp/Resource"
-osascript -e "set Volume 3"
 # Remove file if exist
 if [ "/Private/tmp/Resource" ]; then
 	rm -rf "/Private/tmp/Resource"
