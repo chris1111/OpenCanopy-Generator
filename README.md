@@ -1,7 +1,4 @@
 # OpenCanopy Generator
-
-<img src="https://hitscounter.dev/api/hit?url=https://github.com/chris1111&label=VISITORS&icon=gift&color=%23198754&message=&style=for-the-badge&tz=US%2FEastern">
-
 <img src="Images_Icons/OC-macOS-Default-512x512@1x.png" alt="Github Project" style="width:30%;">
 
 - Build by [chris1111](https://github.com/chris1111/)
