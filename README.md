@@ -1,5 +1,4 @@
 # OpenCanopy Generator
-
 <img src="Images_Icons/OC-macOS-Default-512x512@1x.png" alt="Github Project" style="width:30%;">
 
 - Build by [chris1111](https://github.com/chris1111/)
