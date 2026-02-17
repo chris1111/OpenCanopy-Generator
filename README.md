@@ -8,6 +8,8 @@
 - Release 31 Jan 2026 Update program icon in Tahoe style.
 ### Download V-7 ➤ [OpenCanopy Generator](https://github.com/chris1111/OpenCanopy-Generator/releases/tag/V7)
 
+<p><img src="Images_Icons/Screenshot.png" alt="Icons Project" style="width:75%;"></p>
+
 This tool is for create OpenCore Themes. create a set of Icon at the good size.
 ### ⬇(Exemple)⬇
  
